@@ -2,13 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Reservas & Pagos Resto Shalom</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header> 
+      <nav>
+      <a href="/restaurante shalom/">RESTAURANTE SHALOM</a>
+      <a href="/inicio/" >INICIO</a>
+      <a href="/nosotros/" >NOSOTROS</a>
+      <a href="/pagos y reservas/" >PAGOS Y RESERVAS</a>
+      <a href="/contactanos/" >CONTACTANOS</a>
+    </nav>
+    </header>
+    <main> 
+      <div>
+      <p>RESERVAS RESTAURANTE SHALOM</p>
+      <img src= "Imagen Ramen Restaurante Shalom.jpg" alt="Imagen Ramen Restaurante Shalom" img>
+    </main>
+    </div>
+    
+
+    <div class="container">
+      <div class="cuadro">
+          </p>PARA HACER EFECTIVA TU RESERVA REALIZA EL PAGO EN NUESTRO APLICATIVO</p>
+    </div>
+    </div>
+
+
+    <div class="cuadroParaFormulario">
+     <h3>Confirmar Compra</h3>
+     <form action="#">
+        <label for="nombre">Cliente:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="numero-tarjeta">Número de Tarjeta:</label>
+        <input type="number" id="numero-tarjeta" name="numero-tarjeta" required>
+        
+        <label for="cvv">cvv:</label>
+        <input type="number" id="cvv" name="cvv" required>
+        
+        <label for="mes">January:</label>
+        <input type="number" id="mes" name="mes" min="1" max="12" required>
+    
+        <label for="año">Año:</label>
+        <input type="number" id="año" name="año" min="2023" max="2050" required>
+    
+        <input type="submit" value="Confirm">
+      </form>
+    </div>
+    <footer>
+      <p>Copyright©2023 Desarrolladora Frontend: Carolina Álvarez.Todos los derechos reservados.</p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
