@@ -1,4 +1,5 @@
-# Tarjeta de crédito válida
+# Proyecto Tarjeta de crédito válida
+  # Pagina de reservas Restaurante Shalom
 
 ## Índice
 
@@ -14,12 +15,26 @@
 
 ***
 
-## 1. Preámbulo
+## [1. Preámbulo](#1-preámbulo)
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+# La importancia de una página de reservas. 
+
+Para nadie es un secreto que hoy por hoy es muy importante que los negocios ofrezcan diversos canales de comunicación e información que nos permitan garantizar un excelente servicio al cliente desde los cuaes los clientes reduzcan tiempos de espera y se garanticen servicios de calidad. 
+
+Algunas ventajas de tener una página de reservas. 
+
+* Automatización de procesos: Una página de reservas con tarjeta de crédito puede estar vinculada a sistemas de gestión de reservas y de pago, lo que automatiza gran parte del proceso. Esto ahorra tiempo y reduce la carga de trabajo administrativa.
+
+* Facilita la gestión financiera: Las reservas con tarjeta de crédito facilitan la gestión de pagos y garantizan que los fondos estén disponibles en el momento adecuado.
+
+* Mejora la experiencia del cliente: Si se maneja correctamente, el proceso de pago y reserva con tarjeta de crédito puede ser rápido y sencillo para el cliente, mejorando su experiencia.
+
+* Confirmación de reservas: La tarjeta de crédito permite confirmar y garantizar una reserva. Esto es crucial, especialmente en la industria de la hospitalidad, ya que asegura que los clientes serios reserven y evita reservas falsas o cancelaciones de último minuto
+
+# El metodo.
+
+Se establece que para la elaboración de nuestra página en la parte de validacion utilizaremos el 
+[algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn), también llamado algoritmo de módulo 10, es un método de suma de verificación,se utiliza para validar números de identificación; tales como el IMEI de los celulares, tarjetas de crédito, etc.
 
 Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
 solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
@@ -31,45 +46,28 @@ la suma de sus dígitos finales es un múltiplo de 10.
 
 ## 2. Resumen del proyecto
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
+Junto con nuestro cliente, el restaurate Shalom establecimos algunos objetivos y elementos primordiales para el proyecto. 
+
+* Construir una aplicación web que le permita a un
+usuario validar el número de una tarjeta de crédito.
+* Se debera implementar una funcionalidad para ocultar todos los dígitos de una tarjeta menos
 los últimos cuatro.
+* Los clientes del restaurante podrán pagar con su tarjeta de credito. 
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+### Los objetivos de tipo técnico para este proyecto fueron los siguientes
 
-Como continuación del proyecto de preadmisión, volverás a trabajar sobre
-fundamentos de JavaScript, incluyendo conceptos como variables, condicionales,
-y funciones, así como eventos y manipulación básica del DOM, fundamentos de
-HTML y CSS. Mientras desarrollas este proyecto, te familiarizarás con nuevos
-conceptos también.
-
-### Los objetivos generales de este proyecto son los siguientes
-
-* Trabajar en base a un boilerplate, la estructura básica de un proyecto en
-  distintas carpetas (a través modulos en JS).
-* Conocer las herramientas de mantenimiento y mejora del código (linters y
-  pruebas unitarias).
-* Aprender sobre objetos, estructuras, métodos e iteración (bucles)
-  en JavaScript
+* Trabajar en base al boilerplate establecido, que la estructura básica del proyecto este en distintas carpetas (a través modulos en JS).
+* Conocer y usar las herramientas de mantenimiento y mejora del código (linters y pruebas unitarias).
+* Aprender y aplicar sobre objetos, estructuras, métodos e iteración (bucles) en JavaScript.
 * Implementar control de versiones con git (y la plataforma github)
 
-## 3. Consideraciones generales
+## 3. Consideraciones generales de la desarrolladora
 
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 1 a 3 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
+* Este proyecto se resolvío de manera **individual**.
+* El rango de tiempo estimado para completar el proyecto es de 1 a 7 Sprints.
 
 ## 4. Hito: Criterios de aceptación mínimos del proyecto
-
-Estos son los requisitos que tu proyecto debe que cumplir para asegurar que tu
-trabajo cubra los objetivos principales.
+Los requisitos que el proyecto cumplió para asegurar los objetivos principales.
 
 **1. Una interfaz que debe permitir a la usuaria:**
 
@@ -89,49 +87,27 @@ El código final debe estar subido en un repositorio en GitHub. La interfaz o
 pagina web, debe ser "desplegada" (accesible públicamente online) usando
 GitHub Pages.
   
-**4. Un README que contiene una definición del producto.**  
-En el README cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.  
-Estas preguntas sirven como guía:
+**4. Un README que cuenta con una definición del producto.**  
+Un README contando el preambulo y contar cómo se pensó en los usuarios y cuál fue el proceso para definir el producto final a nivel de experiencia y de interfaz.  
+Tendrá que contestar las siguientes preguntas:
 
 * Quiénes son los principales usuarios de producto.
 * Cuáles son los objetivos de estos usuarios en relación con tu producto.
 * Cómo crees que el producto que estás creando está resolviendo sus problemas.
 
-Con estos requisitos cumplidos puedes
-[considerar agendar un Project Feedback con unx coach.](#9-para-considerar-project-feedback)
+## 5. Consideraciones técnicas
 
-## 5. Hito Opcional: Mostrar la franquicia de tarjeta
+La lógica del proyecto esta implementada completamente en JavaScript.
 
-Las partes opcionales tienen como intención permitirte profundizar un poco más
-sobre los objetivos de aprendizaje del proyecto. Todo en la vida tiene pros y
-contras, decide sabiamente si quieres invertir el tiempo en profundizar/
-perfeccionar o aprender cosas nuevas en el siguiente proyecto.
+Para comenzar este proyecto se reslizó un _fork_ y _clonar_ repositorio que contiene un _boilerplate_ con tests (pruebas). 
+Un _boilerplate_ es la estructura basica de un proyecto que sirve como un punto de partida con archivos inicial y configuración basica de dependencias y tests.
 
-En hito 2 puedes además de validar si el número de la
-tarjeta es válida, mostrar la [franquicia](https://es.wikipedia.org/wiki/N%C3%BAmero_de_tarjeta_bancaria)
-de la tarjeta (ej: Visa, MasterCard, etc)
-usando estas [reglas de validación](https://stevemorse.org/ssn/cc.html).
-Si escribes un nuevo método para eso, hay que hacer pruebas unitarias.
-
-## 6. Consideraciones técnicas
-
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
-puro también conocido como Vanilla JavaScript.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
-es la estructura basica de un proyecto que sirve como un punto de partida con
-archivos inicial y configuración basica de dependencias y tests.
-
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_
+Los tests unitarios cubren un mínimo del 70% de _statements_, _functions_
 y _lines_, y un mínimo del 50% de _branches_. El _boilerplate_ ya contiene el
 setup y configuración necesaria para ejecutar los tests (pruebas) así como _code
-coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
-test`.
+coverage_ para ver el nivel de cobertura de los tests usando el comando `npm run test`.
 
-El boilerplate que les damos contiene esta estructura:
+El boilerplate cuenta con la siguiente estructura:
 
 ```text
 ./
@@ -153,25 +129,22 @@ El boilerplate que les damos contiene esta estructura:
 
 ### Descripción de scripts / archivos
 
-* `README.md`: debe explicar la información necesaria para el uso de tu aplicación
-  web, así como una introducción a la aplicación, su funcionalidad y decisiones de
+* `README.md`: explicar la información necesaria para el uso de la aplicación web, así como una introducción a la aplicación, su funcionalidad y decisiones de
   diseño que tomaron.
-* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
-  debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
-* `src/style.css`: este archivo debe contener las reglas de estilo. Queremos que
-  escribas tus propias reglas, por eso NO está permitido el uso de frameworks de
+
+* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
+
+* `src/style.css`: este archivo debe contener las reglas de estilo. Queremos que escribas tus propias reglas, por eso NO está permitido el uso de frameworks de
   CSS (Bootstrap, Materialize, etc).
-* `src/validator.js`: acá debes implementar el objeto `validator`, el cual ya está
-  _exportado_ en el _boilerplate_. Este objeto (`validator`) debe contener dos
+
+* `src/validator.js`: acá debes implementar el objeto `validator`, el cual ya está  _exportado_ en el _boilerplate_. Este objeto (`validator`) debe contener dos
   métodos:
   - `validator.isValid(creditCardNumber)`: `creditCardNumber` es un `string`
-     con el número de tarjeta que se va a verificar. Esta función debe retornar
-     un `boolean` dependiendo si es válida de acuerdo al [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
+     con el número de tarjeta que se va a verificar. Esta función debe retornar un `boolean` dependiendo si es válida de acuerdo al [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
   - `validator.maskify(creditCardNumber)`: `creditCardNumber` es un `string` con
     el número de tarjeta y esta función debe retornar un `string` donde todos menos
     los últimos cuatro caracteres sean reemplazados por un numeral (`#`) o 🐱.
-    Esta función deberá siempre mantener los últimos cuatro caracteres
-    intactos, aún cuando el `string` sea de menor longitud.
+    Esta función deberá siempre mantener los últimos cuatro caracteres intactos, aún cuando el `string` sea de menor longitud.
 
     Ejemplo de uso
 
@@ -183,17 +156,14 @@ El boilerplate que les damos contiene esta estructura:
     ```
 
 * `src/index.js`: acá debes escuchar eventos del DOM, invocar
-  `validator.isValid()` y `validator.maskify()` según sea necesario y
-  actualizar el resultado en la UI (interfaz de usuario).
-* `test/validator.spec.js`: este archivo contiene algunos tests de ejemplo y acá
-  tendrás que implementar los tests para `validator.isValid()` y `validator.maskify()`.
+  `validator.isValid()` y `validator.maskify()` según sea necesario y actualizar el resultado en la UI (interfaz de usuario).
+* `test/validator.spec.js`: este archivo contiene algunos tests de ejemplo y acá tendrás que implementar los tests para `validator.isValid()` y `validator.maskify()`.
 
 El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
 [htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
 `JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
 automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
-`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
-configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
+`npm run test`. En el caso de `JavaScript` estamos usando un archivo de configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
 información sobre el parser que usar (qué version de JavaScript/ECMAScript), el
 entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
 En cuanto a reglas/guías de estilo en sí,
@@ -208,8 +178,7 @@ la web puedan acceder a él es algo común en proyectos de desarrollo de softwar
 
 En este proyecto, utilizaremos _Github Pages_ para desplegar nuestro sitio web.
 
-El comando `npm run deploy` puede ayudarte con esta tarea y también puedes
- consultar su [documentación oficial](https://docs.github.com/es/pages).
+El comando `npm run deploy` puede ayudarte con esta tarea y también puedes consultar su [documentación oficial](https://docs.github.com/es/pages).
 
 ## 7. Objetivos de aprendizaje
 
@@ -404,23 +373,11 @@ Debes realizar un :fork_and_knife:
 
 ### Recursos y temas relacionados
 
-Súmate al canal de Slack
-[#project-card-validation](https://claseslaboratoria.slack.com/archives/C03LXJ10WJD)
-para conversar y pedir ayuda del proyecto.
-
-A continuación un video de Michelle que te lleva a través del algoritmo de Luhn
-y un par de cosas más que debes saber para resolver este proyecto. ¡Escúchala
-con detenimiento y sigue sus consejos! :)
-
-[![tips credit card](https://img.youtube.com/vi/f0zL6Ot9y_w/0.jpg)](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
-
-[Link](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
 
 Terminal y shell de UNIX:
 
 [![Playlist de Terminal y shell de UNIX](https://img.youtube.com/vi/GB35Eyb-J4c/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
 
-[Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
 
 Control de versiones y trabajo colaborativo con Git y GitHub:
 
@@ -461,6 +418,3 @@ Project Feedback:
 * [ ] La interfaz será "desplegada" usando GitHub Pages.
 * [ ] El README contiene una definición del producto.
 
-Además recuerda que debes hacer: llenado de sprint check out de cierre de proyecto, una autoevaluación de objetivos de aprendizaje y autoevaluación de life skills desde tu dashboard de estudiante. [Acá el link](https://coda.io/d/_deHfHkTC743/Como-lograras-aprender-DEV_sumg1#_lu6qL) del flujo para que puedas ver el proceso.
-
-Si no has completado todo lo anterior, no consideramos que estás lista para tu sesión de Project Feedback. ([acá](https://coda.io/d/_deHfHkTC743/Project-Feedback_suLH5) te dejamos el link de esta instancia)
